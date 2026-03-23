@@ -7,10 +7,10 @@ btn.addEventListener("click", () => {
     // verifica se está ativando ou desativando o dark mode
     if(isDark){
         localStorage.setItem("theme", "dark");
-        icon.src="../assets/light-off.png";
+        icon.src="/assets/light-off.png";
     }
     else{
         localStorage.setItem("theme", "light");
-        icon.src="../assets/light-on.png";
+        icon.src="/assets/light-on.png";
     }
 })
