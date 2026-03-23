@@ -1,3 +1,5 @@
+const basePath = window.location.pathname.includes("/pages") ? "../assets/" : "assets/";
+
 const btn = document.getElementById("themeButton");
 const icon = document.getElementById("themeIcon");
 
@@ -7,10 +9,10 @@ btn.addEventListener("click", () => {
     // verifica se está ativando ou desativando o dark mode
     if(isDark){
         localStorage.setItem("theme", "dark");
-        icon.src="/assets/light-off.png";
+        icon.src= basePath + "light-off.png";
     }
     else{
         localStorage.setItem("theme", "light");
-        icon.src="/assets/light-on.png";
+        icon.src= basePath + "light-on.png";
     }
 })
