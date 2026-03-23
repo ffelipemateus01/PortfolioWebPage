@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Portifólio profissional - Felipe Mateus</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='main.js' defer></script>
+    <!-- estilos usados -->
+    <link rel='stylesheet' href='index.css'>
+    <link rel='stylesheet' href='styles/menubar.css'>
+    <link rel='stylesheet' href='styles/footer.css'>
+    <link rel='stylesheet' href='styles/about.css'>
+</head>
+<body>
+    <div class="mainContainer">
+        <!-- menu principal -->
+        <nav id="menu">
+            <div class="menuList">
+                <a class="menuButton selected">Sobre mim</a>
+                <a href="pages/academic.html" class="menuButton">Formação</a>
+                <a href="pages/portfolio.html" class="menuButton">Portifólio</a>
+                <a href="pages/contact.html" class="menuButton">Contato</a>
+            </div>
+            <button id="themeButton" class="themeButton"><img id="themeIcon" src="assets/light-on.png" alt="Alterar tema"></button>
+        </nav>
+        <!-- título da pagina -->
+        <header class="titleArea">
+            <h1>Quem sou <em class="name">eu</em>?</h1>
+        </header>
+        <!-- conteúdo da pagina -->
+        <div class="contentGrid">
+            <main class="contentContainer">
+                <picture>
+                    <source media="(max-width:1150px)" srcset="assets/eu_200.png">
+                    <source media="(max-width:1500px)" srcset="assets/eu_300.png">
+                    <img src="assets/eu_400.png" alt="Foto de Felipe Mateus" class="myImg">
+                </picture>
+                <section class="textArea">
+                    <h2>Ola, meu nome é <em class="name">Felipe Mateus</em></h2>
+                    <p>
+                        Tenho 28 anos e sou natural de <strong>Santa Rita do Sapucaí</strong>, Minas Gerais. Desde cedo, estive envolvido 
+                        com tecnologia, tomei a decisão de seguir carreira nesse segmento. Formei-me como técnico em 
+                        eletrônica e, ao ter contato com programação descobri minha vocação. Essa experiência despertou 
+                        em mim a paixão por criar soluções e me impulsionou a exercer a profissão. 
+                    </p>
+                    <p>
+                        Hoje, sou <strong>desenvolvedor de software full stack</strong> com experiência na concepção, 
+                        arquitetura, desenvolvimentos e evolução de sistemas completos em produção.
+                    </p>
+                    <p>
+                        Atuo na criação e gestão técnica de aplicações utilizadas em ambiente hospitalar, 
+                        com softwares instalados em diferentes hospitais no Brasil e utilizados diaraiamente 
+                        por profissionais de saúde em processos de exames.
+                    </p>
+                    <p>
+                        Minha experiência inclui desenvolvimento <strong>backend</strong> e <strong>frontend</strong>, modelagem de banco de 
+                        dados e organização arquitetural voltada à escabilidade, manutenibilidade e evolução 
+                        contínua dos sistemas.
+                    </p>
+                    <p>
+                        Durante grande parte da minha trajetória profissional trabalhei com <strong>C#</strong>, que foi a 
+                        base de diversos sistemas que desenvolvi e mantive em produção. Atualmente também 
+                        utilizo tecnologias como <strong>React</strong>, <strong>Typescript</strong> e <strong>Python</strong>, estruturando aplicações com foco 
+                        em organização modular, clareza de código e crescimento sustentável do software.
+                    </p>
+                </section>
+            </main>
+            <aside id="rightArea" class="rightArea">
+                <h3>Veja frases que me inspiram</h3>
+                <ul>
+                    <li>Não existem atalhos. O ingrediente do sucesso é o trabalho!</li>
+                    <li>
+                        O sucesso nasce do querer, da determinação e persistência em 
+                        se chegar a um objetivo. Mesmo não atingindo o alvo, quem busca 
+                        e vence obstáculos, no mínimo, fará coisas admiráveis.
+                    </li>
+                    <li>Você já tem tudo o que precisa para dar o próximo passo.</li>
+                    <li>Não reze por uma vida fácil, reze por forças para suportar uma difícil.</li>
+                    <li>O que não provoca minha morte faz com que eu fique mais forte.</li>
+                </ul>
+                <button id="btSeeMore" class="btSeeMore">Ver mais</button>
+            </aside>
+        </div>
+        <!-- rodapé -->
+        <footer class="footer">
+            <div class="socialsArea">
+                <h4>Minhas redes</h4>
+                <div class="icons">
+                    <a class="icon" href="https://www.instagram.com/ffelipemateus01/">
+                        <img src="assets/social/logo-instagram.png"><span>Instagram</span>
+                    </a>
+                    <a class="icon" href="https://www.linkedin.com/in/felipe-mateus-999417371/">
+                        <img src="assets/social/logo-linkedin.png"><span>LinkedIn</span>
+                    </a>
+                    <a class="icon" href="https://github.com/ffelipemateus01">
+                        <img src="assets/social/logo-github.png"><span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+            <div class="phoneContainer">
+                <div class="phoneImgs">
+                    <img src="../assets/social/phone.png">
+                    <img src="../assets/social/whatsapp.png">
+                </div>
+                <p class="phoneNumber">+5535992350739</p>
+            </div>
+            <h4>Desenvolvido por: Felipe Mateus</h4>
+        </footer>
+    </div>
+    <!-- scripts utilizados -->
+    <script src='scripts/theme.js'></script>
+    <script src='scripts/about.js'></script>
+</body>
+</html>

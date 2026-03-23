@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Portifólio profissional</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='../main.js' defer></script>
+    <!-- estilos utilizados -->
+    <link rel='stylesheet' href='../index.css'>
+    <link rel='stylesheet' href='../styles/menubar.css'>
+    <link rel='stylesheet' href='../styles/footer.css'>
+    <link rel='stylesheet' href='../styles/portfolio.css'>
+</head>
+<body>
+    <div class="mainContainer">
+        <!-- menu principal -->
+        <nav id="menu">
+            <div class="menuList">
+                <a href="../index.html" class="menuButton">Sobre mim</a>
+                <a href="../pages/academic.html" class="menuButton">Formação</a>
+                <a class="menuButton selected">Portifólio</a>
+                <a href="../pages/contact.html" class="menuButton">Contato</a>
+            </div>
+            <button id="themeButton" class="themeButton"><img id="themeIcon" src="../assets/light-on.png" alt="Alterar tema"></button>
+        </nav>
+        <!-- título da página -->
+        <header class="titleArea">
+            <h1>Portifólio profissional</h1>
+        </header>
+        <!-- conteúdo da página -->
+        <main class="contentContainer">
+            <div class="projectsArea">
+                <h2>Conheça meus principais projetos</h2>
+                <!-- meus projetos -->
+                <div class="projects">
+                    <div class="project">
+                        <h3>VD360</h3>
+                        <p>
+                            O VD360 é o software que trabalho com prioridade atualmente, moderno e altamente 
+                            modular, com frontend em React + Typescript e backend em Python, usando PostgreSQL. 
+                            Ele integra múltiplos dispositivos, realiza detecção de pupilas em tempo real, 
+                            realiza a análise de sinais, gera estímulos visuais e cria rotinas personalizadas. 
+                            A arquitetura prioriza modularidade, escalabilidade e evolução contínua, oferecendo 
+                            alta performance e flexibilidade para novos recursos.
+                        </p>
+                        <div class="imagesArea">
+                            <img class="imgProject" src="../assets/screens/vd/vd1.png">
+                            <div class="rowImgs">
+                                <img class="imgProject" src="../assets/screens/vd/vd2.png">
+                                <img class="imgProject" src="../assets/screens/vd/vd3.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <h3>Sivec Plus</h3>
+                        <p>
+                            É um software robusto de aquisição e análise de sinais, que recebe dados via interface 
+                            serial do hardware, processa e interpreta sinais em tempo real, realiza comparações 
+                            com bases de referência e gera relatórios personalizados. Construído em C# e PostgreSQL, 
+                            o sistema foca em performance e confiabilidade.
+                        </p>
+                        <div class="imagesArea">
+                            <img class="imgProject" src="../assets/screens/sivec/sivec1.png">
+                            <div class="rowImgs">
+                                <img class="imgProject" src="../assets/screens/sivec/sivec2.png">
+                                <img class="imgProject" src="../assets/screens/sivec/sivec3.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <h3>Video Frenzel</h3>
+                        <p>
+                            Software de captura e processamento de imagens de alta resolução para análise ocular, 
+                            com C# e PostgreSQL. O sistema realiza aquisição de imagens, edição de vídeo, inserção 
+                            de anotações e geração de relatórios personalizados.
+                        </p>
+                        <div class="imagesArea">
+                            <img class="imgProject" src="../assets/screens/vf/vf1.png">
+                            <div class="rowImgs">
+                                <img class="imgProject" src="../assets/screens/vf/vf2.png">
+                                <img class="imgProject" src="../assets/screens/vf/vf3.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- rodapé da página -->
+        <footer class="footer">
+            <div class="socialsArea">
+                <h4>Minhas redes</h4>
+                <div class="icons">
+                    <a class="icon" href="https://www.instagram.com/ffelipemateus01/">
+                        <img src="../assets/social/logo-instagram.png"><span>Instagram</span>
+                    </a>
+                    <a class="icon" href="https://www.linkedin.com/in/felipe-mateus-999417371/">
+                        <img src="../assets/social/logo-linkedin.png"><span>LinkedIn</span>
+                    </a>
+                    <a class="icon" href="https://github.com/ffelipemateus01">
+                        <img src="../assets/social/logo-github.png"><span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+            <div class="phoneContainer">
+                <div class="phoneImgs">
+                    <img src="../assets/social/phone.png">
+                    <img src="../assets/social/whatsapp.png">
+                </div>
+                <p class="phoneNumber">+5535992350739</p>
+            </div>
+            <h4>Desenvolvido por: Felipe Mateus</h4>
+        </footer>
+    </div>
+    <!-- scripts utilizados -->
+    <script src='../scripts/theme.js'></script>
+</body>
+</html>

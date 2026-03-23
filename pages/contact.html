@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contato</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='../main.js' defer></script>
+    <!-- estilos utilizados -->
+    <link rel='stylesheet' href='../index.css'>
+    <link rel='stylesheet' href='../styles/menubar.css'>
+    <link rel='stylesheet' href='../styles/footer.css'>
+    <link rel='stylesheet' href='../styles/contact.css'>
+</head>
+<body>
+    <div class="mainContainer">
+        <!-- menu da página -->
+        <nav id="menu">
+            <div class="menuList">
+                <a href="../index.html" class="menuButton">Sobre mim</a>
+                <a href="../pages/academic.html" class="menuButton">Formação</a>
+                <a href="../pages/portfolio.html" class="menuButton">Portifólio</a>
+                <a class="menuButton selected">Contato</a>
+            </div>
+            <button id="themeButton" class="themeButton"><img id="themeIcon" src="../assets/light-on.png" alt="Alterar tema"></button>
+        </nav>
+        <!-- título da página -->
+        <header class="titleArea">
+            <h1>Entre em contato comigo</h1>
+        </header>
+        <!-- conteúdo da página -->
+        <main class="contentContainer">
+            <div class="content">
+                <h2>Preencha o formulário abaixo</h2>
+                <!-- formulário de envio de mensagem -->
+                <form class="form" id="form" onsubmit="onSubmit(event)">
+                    <div class="inputContainer">
+                        <label class="label" for="name">Nome</label><input id="name" class="inputText" type="text"></input>
+                    </div>
+                    <div class="inputContainer">
+                        <label class="label" for="mail">Email</label><input id="mail" class="inputText" type="email"></input>
+                    </div>
+                    <div class="inputContainer">
+                        <label class="label" for="message">Mensagem</label><textarea id="message" class="inputMultiline" rows="10"></textarea>
+                    </div>
+                    <div class="buttonsContainer">
+                        <button class="button" type="submit">Enviar mensagem</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <!-- rodapé da página -->
+        <footer class="footer">
+            <div class="socialsArea">
+                <h4>Minhas redes</h4>
+                <div class="icons">
+                    <a class="icon" href="https://www.instagram.com/ffelipemateus01/">
+                        <img src="../assets/social/logo-instagram.png"><span>Instagram</span>
+                    </a>
+                    <a class="icon" href="https://www.linkedin.com/in/felipe-mateus-999417371/">
+                        <img src="../assets/social/logo-linkedin.png"><span>LinkedIn</span>
+                    </a>
+                    <a class="icon" href="https://github.com/ffelipemateus01">
+                        <img src="../assets/social/logo-github.png"><span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+            <div class="phoneContainer">
+                <div class="phoneImgs">
+                    <img src="../assets/social/phone.png">
+                    <img src="../assets/social/whatsapp.png">
+                </div>
+                <p class="phoneNumber">+5535992350739</p>
+            </div>
+            <h4>Desenvolvido por: Felipe Mateus</h4>
+        </footer>
+    </div>
+    <!-- scripts utilizados -->
+    <script src='../scripts/theme.js'></script>
+    <script src="../scripts/contactService.js"></script>
+</body>
+</html>
