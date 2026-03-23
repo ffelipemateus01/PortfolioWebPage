@@ -40,7 +40,10 @@ form.addEventListener("submit", function(e) {
         alert(`${errMessage} A mensagem digitado é inválida.`);
         return;
     }
-    alert(`${name}, sua mensagem enviada com sucesso..`);
-    // limpa formulário após sucesso no envio
-    form.reset();
+    const res = confirm("Após a confirmação sua mensagem será enviada. Deseja continuar?");
+    if (res) {
+        alert(`${name}, sua mensagem enviada com sucesso..`);
+        // limpa formulário após sucesso no envio
+        form.reset();
+    }
 });
